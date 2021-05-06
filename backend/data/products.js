@@ -1,6 +1,5 @@
 const products = [
   {
-    _id: '1',
     name: 'Kraft Seeds Garden Fork',
     image: '/images/garden_fork.jpg',
     description:
@@ -13,7 +12,6 @@ const products = [
     numReviews: 12,
   },
   {
-    _id: '2',
     name: 'TrustBasket Reusable,Heavy Duty Garden Hand Gloves',
     image: '/images/glove.jpg',
     description:
@@ -26,7 +24,6 @@ const products = [
     numReviews: 8,
   },
   {
-    _id: '3',
     name: 'TrustBasket Garden Hand Trowel',
     image: '/images/hand_trowel.jpg',
     description:
@@ -39,7 +36,6 @@ const products = [
     numReviews: 12,
   },
   {
-    _id: '4',
     name: 'TAD SOLID® 202 Grade Stainless Steel Hoe',
     image: '/images/hoe.jpg',
     description:
@@ -52,7 +48,6 @@ const products = [
     numReviews: 12,
   },
   {
-    _id: '5',
     name: 'Wolf-Garten Bypass Secateur/Garden Shear RR-EN Cards',
     image: '/images/lopper.jpg',
     description:
@@ -65,7 +60,6 @@ const products = [
     numReviews: 10,
   },
   {
-    _id: '6',
     name: 'TrustBasket Garden Watering Can (Green 5L)',
     image: '/images/watering_can.jpg',
     description:
