@@ -55,7 +55,7 @@ const ProfileScreen = ({ location, history }) => {
                 {success && <Message variant='success'>Profile Updated</Message>}
                 {loading && <Loader />}
                 <Form onSubmit={submitHandler}>
-                    <Form.Group controlId='nmae'>
+                    <Form.Group controlId='name'>
                         <Form.Label>Name</Form.Label>
                         <Form.Control type='name' placeholder='Enter Name' value={name}
                             onChange={(e) => setName(e.target.value)}>
