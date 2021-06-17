@@ -13,13 +13,13 @@ const PaymentScreen = ({ history }) => {
         history.push('/shipping')
     }
 
-    const [paymentMethod, setPaymentMethod] = useState('PayPal')
+    const [payment, setPayment] = useState('PayPal')
 
     const dispatch = useDispatch()
 
     const submitHandler = (e) => {
         e.preventDefault()
-        dispatch(savePaymentMethod(paymentMethod))
+        dispatch(savePaymentMethod(payment))
         history.push('/placeorder')
     }
 
@@ -30,23 +30,21 @@ const PaymentScreen = ({ history }) => {
             <Form onSubmit={submitHandler}>
                 <Form.Group>
                     <Form.Label as='legend'>Select Method</Form.Label>
-                <Col>
-                <Form.Check type='radio' 
-                label='PayPal or Credit/Debit Card' 
-                id='PayPal' 
-                name='paymentMethod' 
-                value='PayPal' 
-                checked 
-                onChange={(e) =>setPaymentMethod(e.target.value)}>
-                </Form.Check>
-                <Form.Check type='radio' 
-                label='GooglePay' 
-                id='GooglePay' 
-                name='paymentMethod' 
-                value='GooglePay' 
-                onChange={(e) =>setPaymentMethod(e.target.value)}>
-                </Form.Check>
-                </Col>
+                    <Col>
+                        <Form.Check type='radio'
+                            label='PayPal or Credit/Debit Card'
+                            id='PayPal'
+                            name='paymentMethod'
+                            value='PayPal'
+                            checked onChange={(e) => setPayment(e.target.value)}>
+                        </Form.Check>
+                        <Form.Check type='radio'
+                            label='GooglePay'
+                            id='GooglePay'
+                            name='paymentMethod'
+                            value='GooglePay' onChange={(e) => setPayment(e.target.value)}>
+                        </Form.Check>
+                    </Col>
                 </Form.Group>
                 <Button type='submit' variant='primary'>Continue</Button>
             </Form>
